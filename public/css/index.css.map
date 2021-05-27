@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../../src/sass/partials/assets/_resets.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EACA;;;AAEJ;EACI;EACA;EACA","file":"index.css"}
+{"version":3,"sourceRoot":"","sources":["../../src/sass/partials/shared/_resets.scss","../../src/sass/partials/shared/_colors.scss"],"names":[],"mappings":"AAEA;EACI;EACA;EACA;;;AAEJ;EACA,kBCPa","file":"index.css"}
