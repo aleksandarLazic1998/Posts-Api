@@ -1,0 +1,15 @@
+@import 'shared/colors';
+.header-section{
+    text-align: center;
+    text-decoration: wavy;
+    height: 100px;
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 50px;
+    background-color: $saffron-Mango;
+}
+h1:hover{
+    color: #f7fd04;
+    cursor: pointer;
+}
