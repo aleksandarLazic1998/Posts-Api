@@ -13,7 +13,8 @@
     list-style-type: none;
 
     .li {
-        width:300px;
+        width: 100%;
+
         // Card Component 
         .card {
             border: solid 3px;
@@ -22,8 +23,19 @@
             height: 400px;
             background-color: $aqua-haze;
 
+            &.open {
+                position: absolute;
+                left: 20%;
+                width: 60%;
+                height: 100%;
+                margin: 0;
+                z-index: 1000;
+            }
+
+
             //Image in the card Component
             .card-img {
+
                 //Placeholder Image
                 img {
                     border-radius: 15px 15px 0 0;
@@ -57,14 +69,15 @@
                 .img__button {
                     cursor: pointer;
                     align-self: center;
-                    width:100px;
-                    height:40px;
+                    width: 100px;
+                    height: 40px;
                     background-color: $saffron-Mango;
-                    border-radius:0 10px;
+                    border-radius: 0 10px;
                     align-self: center;
                     margin: 10px;
-                    &:hover{
-                        border-radius:10px 0;
+
+                    &:hover {
+                        border-radius: 10px 0;
                         background-color: $koromiko;
                     }
                 }
