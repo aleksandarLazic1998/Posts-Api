@@ -70,10 +70,9 @@ const createElements = (item) => {
 const trimCaption = (caption) => {
     let firstThreeWords = caption.split(' ', 3);
     let toString = firstThreeWords.join(' ');
-
     return toString;
 }
-
+let array = [];
 const list = document.querySelector('.main-ul');
 // Sending http request to get data from JSONPlaceholder API
 const getPosts = async (url) => {
@@ -100,15 +99,15 @@ getPosts('https://jsonplaceholder.typicode.com/posts')
         let firstFive = data.filter(item => item.id <= 5);
         let button = document.querySelectorAll('.img__button');
         firstFive.forEach(user => {
+            // For each button clicked
             button.forEach(btn => {
                 btn.addEventListener('click', function (event) {
                     let targetedElement = event.target;
                     deleteImage(targetedElement);
-
                 });
             });
         });
-    })
+    }) //Catch any errors
     .catch(error => {
         console.error(error);
     });
@@ -116,13 +115,14 @@ getPosts('https://jsonplaceholder.typicode.com/posts')
 // This function will delete Image element and change some functionality with buttom 
 function deleteImage(element) {
     let grandParent = element.parentElement.parentElement;
+
     // If element does not contains class .open change elements classes and implement some functionality
     if (!grandParent.classList.contains('open')) {
         grandParent.classList.add('open');
         grandParent.children[0].children[0].removeAttribute('src');
         element.textContent = 'Show Less';
 
-    // If element does contains class .open change elements classes and implement some functionality reversing the past if statement
+        // If element does contains class .open change elements classes and implement some functionality reversing the past if statement
     } else if (grandParent.classList.contains('open')) {
         grandParent = element.parentElement.parentElement;
         grandParent.classList.remove('open');
@@ -130,3 +130,12 @@ function deleteImage(element) {
         element.textContent = 'Show More';
     }
 }
+
+
+ 
+
+
+
+
+
+
