@@ -1,0 +1,74 @@
+@import 'shared/colors';
+
+.main-ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: minmax(300px, 1fr);
+    grid-gap: 20px 10px;
+    width: 60%;
+    background-color: white;
+    margin: 0 auto;
+    height: 100%;
+    padding: 10px;
+    list-style-type: none;
+
+    .li {
+        width:300px;
+        // Card Component 
+        .card {
+            border: solid 3px;
+            border-radius: 15px;
+            width: 300px;
+            height: 400px;
+            background-color: $aqua-haze;
+
+            //Image in the card Component
+            .card-img {
+                //Placeholder Image
+                img {
+                    border-radius: 15px 15px 0 0;
+                    width: 100%;
+                    border-bottom: solid 1px black;
+                }
+            }
+
+            // Components under the image still in Card Component
+            .card_under-img {
+                padding: 5px;
+                text-align: center;
+
+                //Name of the post
+                .img__post {
+                    text-align: center;
+                    border-bottom: solid 1px black;
+                    font-size: 30px;
+                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                }
+
+                //Little Text from post
+                .img__p {
+                    text-align: justify;
+                    border-bottom: solid 1px black;
+                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                    padding: 10px 0px;
+                }
+
+                //Button to show more of the text and comments
+                .img__button {
+                    cursor: pointer;
+                    align-self: center;
+                    width:100px;
+                    height:40px;
+                    background-color: $saffron-Mango;
+                    border-radius:0 10px;
+                    align-self: center;
+                    margin: 10px;
+                    &:hover{
+                        border-radius:10px 0;
+                        background-color: $koromiko;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -32,10 +32,69 @@ h1:hover {
   bottom: 0;
   text-align: center;
   padding: 10px;
+  margin-top: 40px;
 }
 .footer-p {
   font-size: 19px;
   font-weight: 600;
+}
+
+.main-ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: minmax(300px, 1fr);
+  grid-gap: 20px 10px;
+  width: 60%;
+  background-color: white;
+  margin: 0 auto;
+  height: 100%;
+  padding: 10px;
+  list-style-type: none;
+}
+.main-ul .li {
+  width: 300px;
+}
+.main-ul .li .card {
+  border: solid 3px;
+  border-radius: 15px;
+  width: 300px;
+  height: 400px;
+  background-color: #F4F9F9;
+}
+.main-ul .li .card .card-img img {
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  border-bottom: solid 1px black;
+}
+.main-ul .li .card .card_under-img {
+  padding: 5px;
+  text-align: center;
+}
+.main-ul .li .card .card_under-img .img__post {
+  text-align: center;
+  border-bottom: solid 1px black;
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.main-ul .li .card .card_under-img .img__p {
+  text-align: justify;
+  border-bottom: solid 1px black;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding: 10px 0px;
+}
+.main-ul .li .card .card_under-img .img__button {
+  cursor: pointer;
+  align-self: center;
+  width: 100px;
+  height: 40px;
+  background-color: #FAB95B;
+  border-radius: 0 10px;
+  align-self: center;
+  margin: 10px;
+}
+.main-ul .li .card .card_under-img .img__button:hover {
+  border-radius: 10px 0;
+  background-color: #FDBC5D;
 }
 
 /*# sourceMappingURL=index.css.map */
