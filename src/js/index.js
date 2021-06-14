@@ -130,12 +130,3 @@ function deleteImage(element) {
         element.textContent = 'Show More';
     }
 }
-
-
- 
-
-
-
-
-
-
